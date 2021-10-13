@@ -18,7 +18,6 @@ logs/
 pred/
 gt/
 results/
-figure/
 .cache_dir/
 
 # pycharm IDE
