@@ -26,8 +26,27 @@ SUK110K_fixed (root)
 - Download 'pretrained_model.pth.tar' from [here](https://livecauac-my.sharepoint.com/:u:/g/personal/csm8167_cau_ac_kr/ETzfgw5iIWFNg0ShH-gmXUEBJWqa7ZtsCngy7LLCoFkkBA?e=7iOfYk)  (about 168MB)
 - make './saves' folder and put it to './saves' folder.
 
+## Quick Start  
+
+- Download dataset
+- Download pretrained_model
+
+```
+# python test.py 
+usage: test.py [-h] [--data_root]
+
+  -h, --help            show this help message and exit
+  --data_root           for testing, set your sku110k root path (default='D:\SKU110K_fixed')
+```
+
 ## Results
 
 |methods        | Dataset  | Resolution | AP       |AP50      |AP75      |AR300     |AR300^0.50  |P(R=.5)   |
 |---------------|----------| ---------- | -----    |-------   |--------  |:----:    | -----      | -----    |
-|ours           | SKU test | 800~1333   |0.522     |0.897     |0.556     |0.601     |0.931       | 0.816    |
+|ours           | SKU test | 800~1333   |0.522     |0.897     |0.556     |0.601     |0.935       | 0.816    |
+
+![](./figure/result.JPG)
+
+## Citation
+
+TBD.

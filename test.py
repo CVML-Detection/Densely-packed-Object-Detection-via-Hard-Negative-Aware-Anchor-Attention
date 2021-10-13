@@ -72,10 +72,11 @@ def test(test_loader, model, criterion, coder, opts):
 
         results = evaluator.evaluate(test_loader.dataset)
         mAP = results[0]
-        mean_loss = sum_loss / len(test_loader)
 
-        print(mean_loss)
-        print(mAP)
+        mean_loss = sum_loss / len(test_loader)
+        # print("Avg Loss : ", mean_loss)
+
+        print("mAP : ", mAP)
         print("Eval Time : {:.4f}".format(time.time() - tic))
 
 
@@ -97,8 +98,6 @@ if __name__ == "__main__":
     parser.add_argument('--vis_step', type=int, default=100, help='image reduction scale')
     parser.add_argument('--resize', type=int, default=800, help='image_size')
     parser.add_argument('--num_classes', type=int, default=1)
-    parser.set_defaults(only_det=True)
-
     test_opts = parser.parse_args()
     print(test_opts)
 
