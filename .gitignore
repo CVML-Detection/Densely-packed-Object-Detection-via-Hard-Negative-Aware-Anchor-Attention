@@ -10,9 +10,6 @@ dataset/test_result
 *.tmp
 
 # train
-saves_unet/
-voc/
-save/
 saves/
 logs/
 pred/
