@@ -51,4 +51,13 @@ usage: test.py [-h] [--data_root]
 
 ## Citation
 
-TBD.
+```
+@InProceedings{Cho_2022_WACV,
+    author    = {Cho, Sungmin and Paeng, Jinwook and Kwon, Junseok},
+    title     = {Densely-Packed Object Detection via Hard Negative-Aware Anchor Attention},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2022},
+    pages     = {2635-2644}
+}
+```
